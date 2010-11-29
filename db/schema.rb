@@ -9,17 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101108170827) do
+ActiveRecord::Schema.define(:version => 1) do
 
-  create_table "compstatus", :force => true do |t|
-    t.string   "computer_name", :default => "",                    :null => false
-    t.integer  "status"
-    t.string   "computer_type"
-    t.integer  "left_pos"
-    t.integer  "top_pos"
-    t.datetime "created_at",    :default => '2010-11-09 15:06:57', :null => false
-    t.datetime "updated_at",    :default => '2010-11-09 15:06:57', :null => false
-  end
+ create_table    :compstatus do |t|
+      t.string      :computer_name, :default => "", :null => false, :primary_key => true
+      t.integer     :status, :null => true
+      t.string      :computer_type, :null => true
+      t.integer     :left_pos, :null => true
+      t.integer     :top_pos, :null => true
+      t.timestamps  :updated_at, :null => false, :default => Time.now
+    end
 
   create_table "computers", :force => true do |t|
     t.datetime "created_at"

@@ -1,3 +1,8 @@
+
+#Computer Availability Project.
+#Copyright (C) 2010 Oregon State University Libraries
+#See gpl-copying-licence.txt for full license notice
+
 module ComputersHelper
   def get_fields(row)
       @status = 'busy'

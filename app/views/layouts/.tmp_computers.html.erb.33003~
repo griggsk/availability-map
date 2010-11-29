@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no, height=device-height" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="/images/logo60.jpg" /> 
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="/stylesheets/iphone.css" media="screen" />
+			
+<script type="text/javascript">
+//<![CDATA[
+window.scrollTo(0, 1);
+//]]>  
+</script>
+
+<title><%=@title%></title>
+</head>
+<body>
+
+
+<div id ='content'>
+      <%= yield %>
+</div>
+<div id ='footer'>
+	<div>
+		  Code released under GNU License by Oregon State University Libraries  
+	</div>
+ </div>
+</body>
+</html> 
