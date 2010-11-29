@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    background: #FFFFFF;
+    color: #000000;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+}
+/*computers*/
+#computer_map {
+    background: url(/images/map_300px.jpg) no-repeat;
+    display: block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.icon {
+    height: 24px;
+    width: 71px;
+}
+dt.icon {
+    display: block;
+    position: relative;
+    text-indent: -9999px;
+    outline: none;
+    z-index: 10;
+    text-decoration: none;
+}
+dt.busy_pc {
+    background: url(/images/PC_in_use_10px.jpg) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+dt.avail_pc {
+    background: url(/images/PC_open_10px.jpg) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+dt.offline_pc {
+    background: url(/images/PC_offline_10px.jpg) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+dt.busy_mac {
+    background: url(/images/Mac_in_use_10px.jpg) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+dt.avail_mac {
+    background: url(/images/Mac_open_10px.jpg) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+dt.offline_mac {
+    background: url(/images/Mac_offline_10px.jpg) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+dt.legend_icon {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 12px;
+    width: 175px;
+    padding-left: 22px;
+}

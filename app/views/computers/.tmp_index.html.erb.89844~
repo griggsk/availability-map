@@ -1,0 +1,25 @@
+<div class="top_pager">
+Available: PC (<%=@avail_pc%>/<%=@pc_dataset%>) | Mac (<%=@avail_mac%>/<%=@mac_dataset%>)
+</div>
+<div id="computer_map">
+<dl>
+	
+<% @rows.each  do |row|
+logger.debug("Row #{row}")
+     get_fields(row) 
+     %>
+     <dt class="<%=@status%>_<%=@type%> icon" style="top:<%=@top%>px; left:<%=@left%>px;"> <%=@name%></dt>
+<%end%>
+
+</dl>
+<dl>
+	<dt class="avail_pc legend_icon" style="left:180px; top: -1410px;">PC Available</dt>
+	<dt class="busy_pc legend_icon" style="left:180px; top: -1400px;">PC Busy</dt>
+	<dt class="avail_mac legend_icon" style="left:180px; top: -1390px;">Mac Available</dt>
+	<dt class="busy_mac legend_icon" style="left:180px; top: -1380px;">Mac Busy</dt>
+</dl>
+<br />
+</div>
+<script type="text/javascript">
+setTimeout("window.location.reload()",90000);
+</script>
